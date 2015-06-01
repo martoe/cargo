@@ -32,7 +32,7 @@ import org.xml.sax.SAXException;
 
 /**
  * Implementation of the SAX EntityResolver interface that looks up the web-app DTDs from the JAR.
- * 
+ *
  */
 public class XmlEntityResolver implements EntityResolver
 {
@@ -83,6 +83,12 @@ public class XmlEntityResolver implements EntityResolver
                               "service-ref_4_2.dtd");
         publicIdentifiers.put("-//JBoss//DTD Web Application 4.2//EN",
                               "jboss-web_4_2.dtd");
+        publicIdentifiers.put("-//JBoss//DTD JBOSS 5.0//EN",
+                              "jboss_5_0.dtd");
+        publicIdentifiers.put("-//JBoss//DTD Web Service Reference 5.0//EN",
+                              "service-ref_5_0.dtd");
+        publicIdentifiers.put("-//JBoss//DTD Web Application 5.0//EN",
+                              "jboss-web_5_0.dtd");
     }
 
     /**
@@ -127,7 +133,7 @@ public class XmlEntityResolver implements EntityResolver
 
     /**
      * Tries to decide the file name of a DTD from the public and system id.
-     * 
+     *
      * @param thePublicId the publid id
      * @param theSystemId the system id
      * @return the file name
