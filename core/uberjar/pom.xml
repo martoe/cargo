@@ -24,6 +24,7 @@
     <version>1.4.15</version>
   </parent>
   <artifactId>cargo-core-uberjar</artifactId>
+  <version>1.4.15-CARGO-1374</version>
   <name>Cargo Core Uberjar</name>
   <description>The Cargo Core Uberjar</description>
   <dependencies>
